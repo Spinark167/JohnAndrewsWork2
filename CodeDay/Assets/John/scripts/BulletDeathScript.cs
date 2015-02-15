@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BulletDeathScript : MonoBehaviour {
 
-	float timer = 2f;
+	float timer = .5f;
 
 	// Use this for initialization
 	void Start () {
