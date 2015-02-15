@@ -19,13 +19,13 @@ public class FlipGravityScript : MonoBehaviour {
 	if (Input.GetKey (FlipGravity) && timer <= 0) {
 		if(gravityFlip == true) {
 			Physics.gravity = new Vector3(0f,9.81f,0f);
-			gameObject.transform.Rotate( 180f, 0f, 0f);
+			gameObject.transform.Rotate( 180f, 180f, 0f);
 			//this is where the animation should play
 			timer = 2f;
 			gravityFlip = false;
 		}else{
 			Physics.gravity = new Vector3(0f,-9.81f,0f);
-			gameObject.transform.Rotate( 180f, 0f, 0f);
+			gameObject.transform.Rotate( 180f, 180f, 0f);
 			//this is where the animation should play
 			timer = 2f;
 			gravityFlip = true;

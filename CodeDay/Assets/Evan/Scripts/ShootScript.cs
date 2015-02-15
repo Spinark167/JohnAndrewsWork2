@@ -63,7 +63,7 @@ public class ShootScript : MonoBehaviour {
 		//Debug.Log (factorX);
 		//movement = new Vector3 (-500f * factorX, 20f, 500f * factorZ);
 
-		GameObject cameraPivot = GameObject.Find ("CameraPivot");
+		GameObject cameraPivot = GameObject.Find ("Main Camera");
 		float rotUp = cameraPivot.transform.rotation.eulerAngles.x;
 		//Debug.Log (rotUp);
 		float rotUpRad = ((rotUp * Mathf.PI) / 180);
@@ -82,7 +82,7 @@ public class ShootScript : MonoBehaviour {
 			Timer = TimeSet;
 			GameObject bullet = (GameObject)Instantiate (thePrefab, transform.position, /*Quaternion.Euler(Vector3(0, 0, 90))*/ transform.rotation);
 			
-			bullet.rigidbody.velocity = new Vector3(75f * factorX * factorYOut, -75f * factorYUp , 75f * factorZ * factorYOut);
+			bullet.rigidbody.velocity = new Vector3(45f * factorX * factorYOut, -45f * factorYUp , 45f * factorZ * factorYOut);
 		}
 	}
 

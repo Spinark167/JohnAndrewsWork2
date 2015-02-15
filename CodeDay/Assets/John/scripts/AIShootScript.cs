@@ -4,12 +4,12 @@ using System.Collections;
 public class AIShootScript : MonoBehaviour {
 
 	public GameObject thePrefab;
-	//public AudioClip blipAudio;
+
 	
 	//public KeyCode shoot;
 	
 	public float Timer;
-	float TimeSet = 1.5f;
+	float TimeSet = .9f;
 
 	void Start () {
 		
@@ -35,7 +35,7 @@ public class AIShootScript : MonoBehaviour {
 			
 			bullet.rigidbody.velocity = new Vector3(45f * factorX /** factorYOut*/, /*-45f * factorYUp*/0f , 45f * factorZ /** factorYOut*/);
 
-			//AudioSource.PlayClipAtPoint(blipAudio, transform.position, 1f);
+
 		}
 	}
 	

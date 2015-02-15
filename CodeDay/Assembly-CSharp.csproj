@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Braxton\FloatKeyScript.cs" />
+     <Compile Include="Assets\DestroyAudio.cs" />
      <Compile Include="Assets\Edmond\GuyMovement.cs" />
      <Compile Include="Assets\Edmond\HealthGUI.cs" />
      <Compile Include="Assets\Edmond\LifePickup.cs" />
@@ -58,6 +59,7 @@
      <Compile Include="Assets\Evan\Scripts\LookScript.cs" />
      <Compile Include="Assets\Evan\Scripts\ShootScript.cs" />
      <Compile Include="Assets\John\PreFabs\NewBehaviourScript.cs" />
+     <Compile Include="Assets\John\scripts\AIBulletDeathScript.cs" />
      <Compile Include="Assets\John\scripts\AILookingScript.cs" />
      <Compile Include="Assets\John\scripts\AIMovementScript.cs" />
      <Compile Include="Assets\John\scripts\AIShootScript.cs" />
