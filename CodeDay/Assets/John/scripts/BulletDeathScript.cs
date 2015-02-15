@@ -17,6 +17,20 @@ public class BulletDeathScript : MonoBehaviour {
 		}
 	}
 
+	void OnCollisionEnter (Collision other) {
+		Destroy (gameObject);
+
+		if (other.gameObject.tag == "Player") {
+			GameObject health = GameObject.Find ("Health");
+			HealthGUI heathgui = health.GetComponent<HealthGUI>();
+			heathgui.healthDecrease();
+		}
+
+		if (other.gameObject.tag == "AI") {
+			Destroy(other.gameObject); 
+		}
+	}
+
 	void FixedUpdate () {
 		timer -= .02f;
 	}

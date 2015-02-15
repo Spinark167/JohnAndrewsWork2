@@ -7,7 +7,7 @@ public class CapMovement : MonoBehaviour {
 	
 	public KeyCode lookLeft, lookRight,jump;
 	
-	public KeyCode invertGravity;
+	//public KeyCode invertGravity;
 	bool isInverted = false;
 	float time = 0f;
 	float timer = 1.5f;
@@ -34,23 +34,23 @@ public class CapMovement : MonoBehaviour {
 			move (factorZ, factorX, 15f,-15f);
 		if(Input.GetKey (stop))
 			rigidbody.velocity = new Vector3(0f,rigidbody.velocity.y,0f);
-		if (Input.GetKey (invertGravity) && timer <= 0 ) {
-			isInverted = !isInverted;
-			hasFlipped = false;
-			timer = 1.5f;
-		}
-		if (isInverted ) {
-			Physics.gravity = new Vector3 (0f, 9.81f, 0f);
+		//if (Input.GetKey (invertGravity) && timer <= 0 ) {
+		//	isInverted = !isInverted;
+		//	hasFlipped = false;
+		//	timer = 1.5f;
+		//}
+		//if (isInverted ) {
+		//	Physics.gravity = new Vector3 (0f, 9.81f, 0f);
 
 		
-		} else {
-			Physics.gravity = new Vector3 (0f, -9.81f, 0f);
+		//} else {
+		//	Physics.gravity = new Vector3 (0f, -9.81f, 0f);
 
-		}
-		if (!hasFlipped) {
-			gameObject.transform.Rotate (180, 0, 0);
-			hasFlipped = true;
-		}
+		//}
+		//if (!hasFlipped) {
+		//	gameObject.transform.Rotate (180, 0, 0);
+		//	hasFlipped = true;
+		//}
 		if (rigidbody.velocity.x >= 2.5) 
 			rigidbody.velocity = new Vector3(2.4f ,rigidbody.velocity.y ,rigidbody.velocity.z);	
 		
@@ -79,15 +79,15 @@ public class CapMovement : MonoBehaviour {
 			transform.Rotate (0f, 1.5f, 0f);
 		if (Input.GetKey (jump) && time <= 0f) {
 			rigidbody.AddForce (0f, jumpHeight, 0f);
-			time = 1f;
+			time = 2f;
 		}
 
-		if (gameObject.transform.rotation.eulerAngles.x <= 175 && !isInverted) {
-			gameObject.transform.Rotate(5f,0f,0f);
-		}
-		if (gameObject.transform.rotation.eulerAngles.x <= 175 && isInverted) {
-			gameObject.transform.Rotate(5f,0f,0f);
-		}
+		//if (gameObject.transform.rotation.eulerAngles.x <= 175 && !isInverted) {
+		//	gameObject.transform.Rotate(5f,0f,0f);
+		//}
+		//if (gameObject.transform.rotation.eulerAngles.x <= 175 && isInverted) {
+		//	gameObject.transform.Rotate(5f,0f,0f);
+		//}
 
 	}
 }

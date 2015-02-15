@@ -28,16 +28,16 @@ public class AIStopScript1 : MonoBehaviour {
 
 		AIMovementScript looking = gameObject.GetComponent<AIMovementScript>();
 
-		GameObject guns1 = GameObject.Find ("UpperRight1");
+		GameObject guns1 = GameObject.Find ("UpperRight");
 		AIShootScript shooting1 = gameObject.GetComponent<AIShootScript>();
 
-		GameObject guns2 = GameObject.Find ("UpperLeft1");
+		GameObject guns2 = GameObject.Find ("UpperLeft");
 		AIShootScript shooting2 = gameObject.GetComponent<AIShootScript>();
 
-		GameObject guns3 = GameObject.Find ("LowerRight1");
+		GameObject guns3 = GameObject.Find ("LowerRight");
 		AIShootScript shooting3 = gameObject.GetComponent<AIShootScript>();
 
-		GameObject guns4 = GameObject.Find ("LowerRight1");
+		GameObject guns4 = GameObject.Find ("LowerRight");
 		AIShootScript shooting4 = gameObject.GetComponent<AIShootScript>();
 
 		if (distance <= MinDist || distance >= MaxDist) {
