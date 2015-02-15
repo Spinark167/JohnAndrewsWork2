@@ -46,6 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+     <Compile Include="Assets\Braxton\FloatKeyScript.cs" />
+>>>>>>> origin/master
      <Compile Include="Assets\Edmond\GameMaster.cs" />
      <Compile Include="Assets\Edmond\HealthGUI.cs" />
      <Compile Include="Assets\Edmond\LifePickup.cs" />
