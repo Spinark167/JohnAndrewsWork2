@@ -9,7 +9,7 @@ public class AIShootScript : MonoBehaviour {
 	//public KeyCode shoot;
 	
 	public float Timer;
-	float TimeSet = .9f;
+	float TimeSet = 1.5f;
 
 	void Start () {
 		
