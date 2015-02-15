@@ -47,8 +47,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Edmond\EnemyType2JSMovement.js" />
+     <Compile Include="Assets\Edmond\GrunderMovement.js" />
+     <None Include="Assets\Edmond\Skybox texture files\stars\Note.txt" />
      <None Include="Assets\Skybox texture files\stars\Note.txt" />
      <None Include="Assets\Skybox texture files\stratosphere\Note.txt" />
+     <None Include="Assets\Edmond\Skybox texture files\stratosphere\Note.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>
