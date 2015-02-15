@@ -16,7 +16,7 @@ public class LivesGUI : MonoBehaviour {
 		instruction.text = "Lives: " + lives;
 	}
 
-	public static void Death () {
+	public void Death () {
 		lives--;
 		if (lives <=  0) {
 			Application.LoadLevel("Game Over");

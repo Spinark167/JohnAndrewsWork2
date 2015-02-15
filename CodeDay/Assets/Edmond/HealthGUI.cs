@@ -16,18 +16,18 @@ public class HealthGUI : MonoBehaviour {
 		instruction.text = "Hit Points: " + health;
 	}
 	
-	public static void healthIncrease () {
+	public void healthIncrease () {
 		health++;
 	}
 
-	public static void healthDecrease () {
+	public void healthDecrease () {
 		health--;
 		if (health <= 0) {
 			LivesGUI.Death();
 				}
 		}
 
-	public static void instantDeath () { {
+	public void instantDeath () { {
 		health = 0;
 		LivesGUI.Death ();
 }
