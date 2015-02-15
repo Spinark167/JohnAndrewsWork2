@@ -25,8 +25,8 @@ public class BulletDeathScript : MonoBehaviour {
 		if (other.gameObject.tag == "AI") {
 			Destroy(other.gameObject); 
 			GameObject score = GameObject.Find ("Score");
-			ScoreGUI heathgui = score.GetComponent<HealthGUI>();
-			heathgui.scoreIncrease();
+			ScoreGUI scoregui = score.GetComponent<ScoreGUI>();
+			scoregui.scoreIncrease();
 		}
 	}
 
