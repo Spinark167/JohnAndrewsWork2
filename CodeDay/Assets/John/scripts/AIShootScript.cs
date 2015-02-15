@@ -33,7 +33,7 @@ public class AIShootScript : MonoBehaviour {
 			Timer = TimeSet;
 			GameObject bullet = (GameObject)Instantiate (thePrefab, transform.position, /*Quaternion.Euler(Vector3(0, 0, 90))*/ transform.rotation);
 			
-			bullet.rigidbody.velocity = new Vector3(45f * factorX /** factorYOut*/, /*-45f * factorYUp*/0f , 45f * factorZ /** factorYOut*/);
+			bullet.rigidbody.velocity = new Vector3(20f * factorX /** factorYOut*/, /*-45f * factorYUp*/0f , 20f * factorZ /** factorYOut*/);
 
 
 		}
