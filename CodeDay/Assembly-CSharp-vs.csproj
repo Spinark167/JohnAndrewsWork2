@@ -61,6 +61,7 @@
      <Compile Include="Assets\John\scripts\AIShootScript.cs" />
      <Compile Include="Assets\John\scripts\AIStopScript1.cs" />
      <Compile Include="Assets\John\scripts\BulletDeathScript.cs" />
+     <Compile Include="Assets\John\scripts\FlipGravityScript.cs" />
      <None Include="Assets\Edmond\Skybox texture files\stratosphere\Note.txt" />
      <None Include="Assets\Edmond\Skybox texture files\stars\Note.txt" />
      <None Include="Assets\Skybox texture files\stars\Note.txt" />
