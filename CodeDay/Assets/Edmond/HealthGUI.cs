@@ -23,13 +23,17 @@ public class HealthGUI : MonoBehaviour {
 	public void healthDecrease () {
 		health--;
 		if (health <= 0) {
-			LivesGUI.Death();
+			GameObject death = GameObject.Find ("LivesGUI");
+			LivesGUI deathgui = death.GetComponent<LivesGUI>();
+			deathgui.Death();
 				}
 		}
 
 	public void instantDeath () { {
 		health = 0;
-		LivesGUI.Death ();
+			GameObject death = GameObject.Find ("LivesGUI");
+			LivesGUI deathgui = death.GetComponent<LivesGUI>();
+		deathgui.Death ();
 }
 }
 }
