@@ -4,6 +4,6 @@ using System.Collections;
 public class StartButton : MonoBehaviour {
 
 	public void startGame () {
-		Application.LoadLevel ("Evan");
+		Application.LoadLevel ("Map");
 	}
 }
