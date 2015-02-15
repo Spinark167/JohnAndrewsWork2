@@ -46,8 +46,17 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
      <Compile Include="Assets\Evan\Scripts\CapMovement.cs" />
      <Compile Include="Assets\Evan\Scripts\LookScript.cs" />
+=======
+     <Compile Include="Assets\Edmond\PlayerMovement.cs" />
+     <Compile Include="Assets\John\scripts\AILookingScript.cs" />
+     <Compile Include="Assets\John\scripts\AIMovementScript.cs" />
+     <Compile Include="Assets\John\scripts\AIShootScript.cs" />
+     <Compile Include="Assets\John\scripts\AIStopScript1.cs" />
+     <Compile Include="Assets\John\scripts\BulletDeathScript.cs" />
+>>>>>>> origin/master
      <None Include="Assets\Skybox texture files\stars\Note.txt" />
      <None Include="Assets\Skybox texture files\stratosphere\Note.txt" />
  <Reference Include="UnityEngine.UI">

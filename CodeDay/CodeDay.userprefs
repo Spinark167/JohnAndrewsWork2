@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Evan\Scripts\CapMovement.cs">
     <Files>
       <File FileName="Assets\Evan\Scripts\LookScript.cs" Line="21" Column="29" />
-      <File FileName="Assets\Evan\Scripts\CapMovement.cs" Line="76" Column="1" />
+      <File FileName="Assets\Evan\Scripts\CapMovement.cs" Line="87" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
