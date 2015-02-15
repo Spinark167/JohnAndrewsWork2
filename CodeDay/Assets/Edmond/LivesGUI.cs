@@ -22,7 +22,7 @@ public class LivesGUI : MonoBehaviour {
 			Application.LoadLevel("Game Over");
 		}
 		else {
-			Application.LoadLevel("Evan");
+			Application.LoadLevel("Map");
 		}
 	}
 }
