@@ -44,7 +44,7 @@ public class AILookingScript : MonoBehaviour {
 
 		transform.eulerAngles = new Vector3 (0f, -AngDiffDeg + TurnAround /*+ TurnAroundZ*/, 0f);
 
-		float rotOfObj = transform.rotation.eulerAngles.y;
+		/*float rotOfObj = transform.rotation.eulerAngles.y;
 		//Debug.Log (rotOfObj);
 		float radRotObj = ((rotOfObj * Mathf.PI) / 180);
 
@@ -58,7 +58,7 @@ public class AILookingScript : MonoBehaviour {
 			factorZ = factorZ * -1;
 		}*/
 
-		if (rotOfObj > 270 && rotOfObj < 360) {
+		/*if (rotOfObj > 270 && rotOfObj < 360) {
 			factorX = factorX * -1;
 		}
 		if (rotOfObj > 0 && rotOfObj < 90) {
@@ -102,7 +102,7 @@ public class AILookingScript : MonoBehaviour {
 		}
 		if (rigidbody.velocity.z <= -2.5) {
 			rigidbody.velocity = new Vector3(rigidbody.velocity.x ,rigidbody.velocity.y ,-2.4f);	
-		}
+		}*/
 
 	}
 

@@ -21,7 +21,7 @@ public class AIShootScript : MonoBehaviour {
 		float factorX = Mathf.Sin (DegValX);
 		float factorZ = Mathf.Cos (DegValX);
 
-		GameObject cameraPivot = GameObject.Find ("GrundHolder");
+		GameObject cameraPivot = GameObject.Find ("GrundHolder1");
 		float rotUp = cameraPivot.transform.rotation.eulerAngles.x;
 
 		float rotUpRad = ((rotUp * Mathf.PI) / 180);

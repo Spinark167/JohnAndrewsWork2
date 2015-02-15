@@ -46,9 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Edmond\PlayerMovement.cs" />
      <Compile Include="Assets\John\scripts\AILookingScript.cs" />
+     <Compile Include="Assets\John\scripts\AIMovementScript.cs" />
      <Compile Include="Assets\John\scripts\AIShootScript.cs" />
-     <Compile Include="Assets\John\scripts\AIStopScript.cs" />
+     <Compile Include="Assets\John\scripts\AIStopScript1.cs" />
      <Compile Include="Assets\John\scripts\BulletDeathScript.cs" />
      <None Include="Assets\Skybox texture files\stars\Note.txt" />
      <None Include="Assets\Skybox texture files\stratosphere\Note.txt" />

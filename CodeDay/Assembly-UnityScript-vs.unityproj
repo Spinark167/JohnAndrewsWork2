@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{94AD0955-8DAA-B860-74E8-4407FA6C4794}</ProjectGuid>
+	<ProjectGuid>{FCDDCF7B-392B-59A4-CDFD-FF95B2AE6947}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,12 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Edmond\PlayerMovement.cs" />
-     <Compile Include="Assets\John\scripts\AILookingScript.cs" />
-     <Compile Include="Assets\John\scripts\AIMovementScript.cs" />
-     <Compile Include="Assets\John\scripts\AIShootScript.cs" />
-     <Compile Include="Assets\John\scripts\AIStopScript1.cs" />
-     <Compile Include="Assets\John\scripts\BulletDeathScript.cs" />
+     <Compile Include="Assets\Edmond\EnemyType2JSMovement.js" />
      <None Include="Assets\Skybox texture files\stars\Note.txt" />
      <None Include="Assets\Skybox texture files\stratosphere\Note.txt" />
  <Reference Include="UnityEngine.UI">
