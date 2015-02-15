@@ -46,19 +46,25 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-     <Compile Include="Assets\Evan\Scripts\CapMovement.cs" />
-     <Compile Include="Assets\Evan\Scripts\LookScript.cs" />
-=======
+     <Compile Include="Assets\Edmond\GameMaster.cs" />
+     <Compile Include="Assets\Edmond\HealthGUI.cs" />
+     <Compile Include="Assets\Edmond\LifePickup.cs" />
+     <Compile Include="Assets\Edmond\LivesGUI.cs" />
      <Compile Include="Assets\Edmond\PlayerMovement.cs" />
+     <Compile Include="Assets\Edmond\ScoreGUI.cs" />
+     <Compile Include="Assets\Edmond\StartButton.cs" />
+     <Compile Include="Assets\Evan\Scripts\CapMovement.cs" />
+     <Compile Include="Assets\Evan\Scripts\JumpSoundScript.cs" />
+     <Compile Include="Assets\Evan\Scripts\LookScript.cs" />
      <Compile Include="Assets\John\scripts\AILookingScript.cs" />
      <Compile Include="Assets\John\scripts\AIMovementScript.cs" />
      <Compile Include="Assets\John\scripts\AIShootScript.cs" />
      <Compile Include="Assets\John\scripts\AIStopScript1.cs" />
      <Compile Include="Assets\John\scripts\BulletDeathScript.cs" />
->>>>>>> origin/master
+     <None Include="Assets\Edmond\Skybox texture files\stars\Note.txt" />
      <None Include="Assets\Skybox texture files\stars\Note.txt" />
      <None Include="Assets\Skybox texture files\stratosphere\Note.txt" />
+     <None Include="Assets\Edmond\Skybox texture files\stratosphere\Note.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>

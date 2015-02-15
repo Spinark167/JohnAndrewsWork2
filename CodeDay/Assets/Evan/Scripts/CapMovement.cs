@@ -8,7 +8,7 @@ public class CapMovement : MonoBehaviour {
 	public KeyCode lookLeft, lookRight,jump;
 	
 	public KeyCode invertGravity;
-	bool isInverted;
+	bool isInverted = false;
 	float time = 0f;
 	float timer = 1.5f;
 	public float jumpHeight;
@@ -16,7 +16,7 @@ public class CapMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+
 	}
 	
 	// Update is called once per frame
@@ -39,7 +39,7 @@ public class CapMovement : MonoBehaviour {
 			hasFlipped = false;
 			timer = 1.5f;
 		}
-		if (isInverted  ) {
+		if (isInverted ) {
 			Physics.gravity = new Vector3 (0f, 9.81f, 0f);
 
 		
@@ -51,15 +51,21 @@ public class CapMovement : MonoBehaviour {
 			gameObject.transform.Rotate (180, 0, 0);
 			hasFlipped = true;
 		}
-		if(rigidbody.velocity.x >= 2.5)
-			rigidbody.velocity = new Vector3(2.4f,rigidbody.velocity.y,rigidbody.velocity.z);
-		if(rigidbody.velocity.x <= -2.5)
-			rigidbody.velocity = new Vector3(-2.4f,rigidbody.velocity.y,rigidbody.velocity.z);
-		if(rigidbody.velocity.z >= 2.5)
-			rigidbody.velocity = new Vector3(rigidbody.velocity.x,rigidbody.velocity.y,2.4f);
-		if(rigidbody.velocity.z <= -2.5)
-			rigidbody.velocity = new Vector3(rigidbody.velocity.x,rigidbody.velocity.y,-2.4f);
+		if (rigidbody.velocity.x >= 2.5) 
+			rigidbody.velocity = new Vector3(2.4f ,rigidbody.velocity.y ,rigidbody.velocity.z);	
 		
+		if (rigidbody.velocity.x <= -2.5) 
+			rigidbody.velocity = new Vector3(-2.4f ,rigidbody.velocity.y ,rigidbody.velocity.z);	
+		
+		if (rigidbody.velocity.z >= 2.5) 
+			rigidbody.velocity = new Vector3(rigidbody.velocity.x ,rigidbody.velocity.y ,2.4f);	
+
+		if (rigidbody.velocity.z <= -2.5) 
+			rigidbody.velocity = new Vector3(rigidbody.velocity.x ,rigidbody.velocity.y ,-2.4f);	
+
+		if (Physics.gravity.x > 0) {
+			jumpHeight = jumpHeight*-1;
+		}
 	}
 	void move(float factor1,float factor2, float x,float z){
 		rigidbody.AddForce (x * factor1, 0f, z*factor2);
@@ -75,12 +81,13 @@ public class CapMovement : MonoBehaviour {
 			rigidbody.AddForce (0f, jumpHeight, 0f);
 			time = 1f;
 		}
+
 		if (gameObject.transform.rotation.eulerAngles.x <= 175 && !isInverted) {
 			gameObject.transform.Rotate(5f,0f,0f);
 		}
 		if (gameObject.transform.rotation.eulerAngles.x <= 175 && isInverted) {
 			gameObject.transform.Rotate(5f,0f,0f);
 		}
-		
+
 	}
 }
