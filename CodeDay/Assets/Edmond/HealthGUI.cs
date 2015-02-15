@@ -5,10 +5,10 @@ using UnityEngine.UI;
 public class HealthGUI : MonoBehaviour {
 
 	Text instruction;
-	public static int health = 400;
+	public static int health = 20;
 
 	void Start () {
-		health = 400;
+		health = 20;
 	}
 	
 	void Update () {
